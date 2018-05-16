@@ -150,7 +150,7 @@ MyMessage msgTemp(CHILD_ID_TEMP, V_TEMP);
 MyMessage msgHum(CHILD_ID_HUM, V_HUM);
 MyMessage msgSupercap(CHILD_ID_SUPERCAP, V_VOLTAGE);
 MyMessage msgSolarpanel(CHILD_ID_SOLARPANEL, V_VOLTAGE);
-MyMessage msgPGood(CHILD_ID_PGOOD, V_STATUS);
+MyMessage msgPGood(CHILD_ID_PGOOD, V_VAR1);
 
 void setup()
 {
@@ -175,7 +175,7 @@ void presentation()
   present(CHILD_ID_HUM, S_HUM);
   present(CHILD_ID_SUPERCAP, S_MULTIMETER);
   present(CHILD_ID_SOLARPANEL, S_MULTIMETER);
-  present(CHILD_ID_PGOOD, S_BINARY);
+  present(CHILD_ID_PGOOD, S_CUSTOM);
 }
 
 void loop()
